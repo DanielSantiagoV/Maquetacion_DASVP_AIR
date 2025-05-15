@@ -42,3 +42,54 @@
         <input type="checkbox" id="soloida" name="soloida"> <!-- Casilla de verificación -->
         <label for="soloida">Solo ida</label> <!-- Etiqueta asociada -->
       </div>
+
+       <!-- Campo de selección de ciudad de origen -->
+       <div class="input-group">
+        <label for="origen" class="input-label">Origen</label>
+        <select class="input-field" id="origen" name="origen" required autocomplete="address-level2">
+          <option value="" disabled selected>Seleccione ciudad</option> <!-- Placeholder -->
+          <option>Bogotá</option>
+          <option>Medellín</option>
+          <option>Barranquilla</option>
+          <option>Cali</option>
+          <option>Cartagena</option>
+          <option>Bucaramanga</option>
+          <!-- Puedes añadir más ciudades si lo deseas -->
+        </select>
+      </div>
+
+      <!-- Campo de selección de ciudad de destino -->
+      <div class="input-group">
+        <label for="destino" class="input-label">Destino</label>
+        <select class="input-field" id="destino" name="destino" required autocomplete="address-level2">
+          <option value="" disabled selected>Seleccione ciudad</option>
+          <option>Bogotá</option>
+          <option>Medellín</option>
+          <option>Barranquilla</option>
+          <option>Cali</option>
+          <option>Cartagena</option>
+          <option>Bucaramanga</option>
+        </select>
+      </div>
+
+      <!-- Campo de selección de fecha de salida -->
+      <div class="input-group">
+        <label for="salida" class="input-label">Fecha de salida</label>
+        <input class="input-field" type="date" id="salida" name="salida" required> <!-- Fecha obligatoria -->
+      </div>
+
+      <!-- Campo de selección de fecha de regreso (opcional, depende del checkbox) -->
+      <div class="input-group" id="regresoGroup">
+        <label for="regreso" class="input-label">Fecha de regreso</label>
+        <input class="input-field" type="date" id="regreso" name="regreso"> <!-- Campo opcional -->
+      </div>
+
+      <!-- Botón para enviar el formulario de búsqueda -->
+      <button class="btn-primary" type="submit">
+        <span class="btn-icon">🔍</span> <!-- Icono de lupa -->
+        BUSCAR VUELOS
+      </button>
+    </form>
+  </div>
+</body>
+</html>
