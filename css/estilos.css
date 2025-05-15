@@ -1019,3 +1019,124 @@ textarea:focus {                                                                
     }
   }
   
+  .menu-actions {
+    display: flex;                     /* Usa flexbox para alinear elementos hijos */
+    flex-direction: column;           /* Apila los elementos verticalmente */
+    gap: 18px;                        /* Espacio entre cada elemento */
+    margin-top: 24px;                 /* Espacio superior entre el menú y el elemento anterior */
+  }
+  
+  .menu-card {
+    display: flex;                    /* Usa flexbox para alinear contenido horizontalmente */
+    align-items: center;             /* Centra verticalmente los elementos */
+    background: #f5f6fa;             /* Fondo claro para la tarjeta */
+    border-radius: 12px;             /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(123,47,242,0.08); /* Sombra suave morada */
+    padding: 18px 16px;              /* Espaciado interno: 18px arriba/abajo y 16px izquierda/derecha */
+    font-size: 1.15rem;              /* Tamaño de fuente ligeramente aumentado */
+    font-weight: 700;                /* Texto en negrilla */
+    color: #7b2ff2;                  /* Color de texto morado */
+    text-decoration: none;          /* Elimina subrayado en enlaces */
+    transition: box-shadow 0.2s, background 0.2s; /* Transiciones suaves al interactuar */
+    gap: 16px;                       /* Espacio entre ícono y texto */
+  }
+  
+  .menu-card:hover {
+    background: #e6e0fa;            /* Cambia fondo al pasar el mouse */
+    box-shadow: 0 4px 16px rgba(123,47,242,0.16); /* Sombra más marcada en hover */
+  }
+  
+  .menu-icon {
+    font-size: 2rem;                 /* Tamaño grande para íconos */
+    width: 40px;                     /* Ancho fijo para mantener alineación */
+    text-align: center;             /* Centra el ícono horizontalmente */
+    flex-shrink: 0;                  /* Evita que el ícono se reduzca al ajustar el contenedor */
+  }
+  
+  .buscar-box {
+    background: var(--color-blanco);                /* Fondo blanco personalizado desde variables */
+    border-radius: var(--border-radius);            /* Bordes redondeados personalizados */
+    box-shadow: 0 4px 24px var(--color-shadow);     /* Sombra definida desde variable */
+    padding: 30px;                                  /* Espaciado interno uniforme */
+    position: relative;                             /* Necesario para z-index y efectos */
+    z-index: 1;                                     /* Se posiciona encima de otros elementos si se superponen */
+    animation: fadeIn 0.6s ease-out;                /* Animación de entrada suave */
+  }
+  
+  /* PERFIL DE USUARIO */
+  .user-avatar {
+    width: 60px;                     /* Ancho fijo del avatar */
+    height: 60px;                    /* Alto fijo del avatar */
+    border-radius: 50%;             /* Hace el contenedor perfectamente circular */
+    background: var(--color-gris);  /* Fondo gris desde variable */
+    display: flex;                  /* Usa flexbox para centrar la imagen */
+    align-items: center;            /* Centra verticalmente */
+    justify-content: center;        /* Centra horizontalmente */
+    margin-bottom: 10px;            /* Espacio inferior */
+    overflow: hidden;               /* Oculta cualquier parte de la imagen que sobresalga */
+  }
+  
+  .user-avatar img {
+    width: 100%;                    /* La imagen ocupa el 100% del contenedor */
+    height: auto;                   /* Mantiene la proporción original */
+  }
+  
+  .input-field {
+    width: 100%;                                     /* Ocupa todo el ancho disponible */
+    padding: 15px;                                   /* Espaciado interno uniforme */
+    border: 1.5px solid var(--color-gris);           /* Borde gris claro personalizado */
+    border-radius: var(--border-radius-sm);          /* Bordes redondeados pequeños desde variable */
+    font-size: 1rem;                                 /* Tamaño de fuente estándar */
+    font-family: 'Montserrat', sans-serif;           /* Fuente personalizada */
+    transition: all 0.3s;                            /* Transición suave en todos los cambios */
+    background: var(--color-blanco);                 /* Fondo blanco */
+  }
+  
+  .input-field:focus {
+    border-color: var(--color-principal);            /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 0 2px rgba(123, 47, 242, 0.2);    /* Efecto de sombra morado alrededor del campo */
+    outline: none;                                   /* Elimina el borde predeterminado del navegador */
+  }
+  
+  /* CHECKBOX PERSONALIZADO */
+  .checkbox-group {
+    display: flex;                    /* Alinea el checkbox y su texto en línea */
+    align-items: center;             /* Centra verticalmente */
+    margin-bottom: 25px;             /* Espacio inferior con otros elementos */
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    -webkit-appearance: none;                          /* Elimina el estilo nativo en WebKit */
+    appearance: none;                                  /* Elimina el estilo nativo general */
+    width: 20px;                                       /* Tamaño del checkbox */
+    height: 20px;                                      /* Altura del checkbox */
+    border: 2px solid var(--color-gris-oscuro);        /* Borde gris oscuro personalizado */
+    border-radius: 4px;                                /* Bordes ligeramente redondeados */
+    margin-right: 10px;                                /* Espacio a la derecha del texto */
+    cursor: pointer;                                   /* Cambia el cursor al pasar sobre el checkbox */
+    position: relative;                                /* Necesario para colocar el check con ::after */
+    transition: all 0.3s;                              /* Transición suave para cambios */
+  }
+  
+  .checkbox-group input[type="checkbox"]:checked {
+    background-color: var(--color-principal);          /* Fondo morado al estar marcado */
+    border-color: var(--color-principal);              /* Borde morado al estar marcado */
+  }
+  
+  .checkbox-group input[type="checkbox"]:checked::after {
+    content: "✓";                                      /* Muestra el check en el centro */
+    position: absolute;                                /* Posicionamiento absoluto dentro del checkbox */
+    color: white;                                      /* Color blanco del símbolo */
+    font-size: 14px;                                   /* Tamaño del check */
+    top: 50%;                                          /* Centrado vertical */
+    left: 50%;                                         /* Centrado horizontal */
+    transform: translate(-50%, -50%);                  /* Centrado exacto usando transformación */
+  }
+  
+  .checkbox-group label {
+    font-size: 1rem;                /* Tamaño del texto del label */
+    color: var(--color-texto);     /* Color personalizado del texto */
+    cursor: pointer;               /* Cambia el cursor al pasar sobre el texto */
+  }
+
+  /* ✅ FIN DEL ARCHIVO DE ESTILOS CSS — COMPLETADO CON ÉXITO */
