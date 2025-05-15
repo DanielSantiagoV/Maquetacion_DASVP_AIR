@@ -22,3 +22,31 @@
   <div class="container crearpass-box"> <!-- Contenedor con clase específica para crear contraseña -->
     <h2 class="section-title">Crear Contraseña</h2> <!-- Título de sección -->
     <hr class="divider"> <!-- Línea divisoria -->
+
+    <!-- Campo para confirmar la contraseña ingresada -->
+    <div class="input-group">
+        <label for="confirmarPassword" class="input-label">Confirmar contraseña</label> <!-- Etiqueta accesible -->
+        <input 
+          id="confirmarPassword" 
+          class="input-field" 
+          type="password" 
+          placeholder="Confirma tu nueva contraseña" required minlength="8"  autocomplete="new-password" 
+        >
+      </div>
+
+      <!-- Indicador visual y texto de la fuerza de la contraseña -->
+      <div class="password-strength"> 
+        <div class="strength-bar"></div> <!-- Barra visual que puede cambiar según la fuerza -->
+        <div class="strength-text">Seguridad de la contraseña</div> <!-- Texto descriptivo -->
+      </div>
+
+      <!-- Botón para enviar el formulario -->
+      <button class="btn-primary" type="submit">
+        <span class="btn-icon">🔒</span> <!-- Icono de candado para reforzar la idea -->
+        GUARDAR CONTRASEÑA
+      </button>
+
+    </form>
+  </div>
+</body>
+</html>
