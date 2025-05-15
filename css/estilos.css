@@ -428,3 +428,69 @@ textarea:focus {                                                                
     text-align: left;            /* Alineación a la izquierda */
   }
   
+
+  .user-greeting-box {
+    text-align: center;               /* Centra el texto dentro del contenedor */
+    padding: 1rem 0;                  /* Espaciado vertical arriba y abajo */
+  }
+  
+  .user-greeting {
+    font-size: 1.5rem;                /* Tamaño de fuente grande para saludo */
+    font-weight: 600;                 /* Peso seminegrita para destacar */
+    color: #222;                     /* Color de texto oscuro */
+    margin: 0;                       /* Sin márgenes */
+    font-family: 'Montserrat', sans-serif; /* Tipografía limpia y moderna */
+  }
+  
+  .welcome-subtitle {
+    font-size: 1.1rem;               /* Tamaño de fuente ligeramente menor */
+    font-weight: 400;                /* Peso normal */
+    color: #333;                    /* Gris oscuro */
+    margin: 0.5rem 0 1rem 0;        /* Margen arriba y abajo para separación */
+  }
+  
+  /* Interacción visual cuando el texto está enfocado o hover */
+  .user-name:hover {
+    color: #9032a3;                 /* Cambio de color al pasar el cursor */
+    transform: scale(1.05);          /* Agrandar ligeramente */
+    transition: color 0.3s, transform 0.3s; /* Transición suave para color y tamaño */
+  }
+  
+  .logout-link {
+    color: #7b2ff2;                 /* Color principal violeta */
+    font-size: 1.05rem;             /* Tamaño de fuente mediano */
+    margin-left: 2px;               /* Pequeño margen a la izquierda */
+    margin-top: 4px;                /* Margen superior para separación */
+    transition: color 0.2s;         /* Transición suave en color */
+    text-decoration: underline;     /* Subrayado para indicar enlace */
+    display: inline-block;          /* Para aplicar márgenes y alinear texto */
+    text-align: left;               /* Alineación a la izquierda */
+  }
+  .logout-link:hover {
+    color: #f357a8;                 /* Cambio de color rosa al hover */
+  }
+  
+  /* Perfil de usuario - versión minimalista */
+  .user-profile1 {
+    display: flex;                  /* Flexbox para layout horizontal */
+    align-items: center;            /* Centrar verticalmente */
+    gap: 12px;                     /* Espacio entre elementos */
+    margin-bottom: 16px;           /* Espacio debajo del contenedor */
+    padding: 8px 0;                /* Espaciado arriba y abajo */
+    border-bottom: 1px solid #e0e0e0; /* Línea sutil separadora */
+  }
+  
+  .user-avatar1 {
+    width: 50px;                   /* Ancho fijo */
+    height: 50px;                  /* Alto fijo */
+    border-radius: 50%;            /* Forma circular */
+    background: #f0f0f0;           /* Fondo gris claro */
+    display: flex;                 /* Flexbox para alinear contenido interno */
+    align-items: left;             /* Alinear verticalmente a la izquierda (mejor usar flex-start) */
+    justify-content: left;         /* Justificar contenido a la izquierda */
+    font-size: 2.2rem;             /* Tamaño grande para icono o inicial */
+    color: #fff;                   /* Color blanco para el texto */
+    border: 2px solid #7b2ff2;    /* Borde violeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+  }
+  
