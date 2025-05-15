@@ -98,3 +98,74 @@
     line-height: 1.2;                                                                     /* Altura de línea ajustada para buena legibilidad */
   }
   
+  .header-slogan {
+    font-size: 1.25rem; /* 20px aprox */                                                   /* Tamaño de fuente ligeramente más grande */
+    margin: 12px 0 0;                                                                       /* Margen superior de 12px, sin margen horizontal ni inferior */
+    font-weight: 300;                                                                       /* Fuente ligera para estilo delicado */
+    font-style: italic;                                                                     /* Texto en cursiva */
+    letter-spacing: 0.8px;                                                                  /* Espaciado entre letras pequeño */
+    opacity: 0.95;                                                                          /* Ligera transparencia para suavizar */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);                                            /* Sombra sutil para dar profundidad */
+  }
+  
+  /* LOGIN - Centrado y animación */
+  .login-box {
+    margin-top: 32px;                                                                       /* Margen superior para separar del contenido anterior */
+    padding-top: 48px;                                                                      /* Padding superior para separar contenido interno */
+    background: var(--color-blanco);                                                       /* Fondo blanco definido en variables CSS */
+    border-radius: 18px 18px 0 0;                                                          /* Bordes superiores redondeados */
+    box-shadow: 0 4px 24px var(--color-shadow);                                           /* Sombra profunda para efecto flotante */
+    max-width: 420px;                                                                       /* Ancho máximo del contenedor */
+    margin-left: auto;                                                                      /* Centrado horizontal automático */
+    margin-right: auto;                                                                     /* Centrado horizontal automático */
+    display: flex;                                                                          /* Uso de flexbox para layout */
+    flex-direction: column;                                                                 /* Elementos apilados verticalmente */
+    align-items: center;                                                                    /* Alineación centrada horizontal */
+    animation: fadeIn 0.7s;                                                                 /* Animación de aparición suave */
+    transition: box-shadow 0.3s, background 0.3s;                                          /* Transiciones suaves para sombra y fondo */
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px); }                                      /* Comienza invisible y desplazado hacia abajo */
+    to { opacity: 1; transform: translateY(0); }                                           /* Termina visible y en posición original */
+  }
+  
+  .login-logo {
+    width: 90px;                                                                            /* Ancho fijo para logo */
+    height: 90px;                                                                           /* Alto fijo para logo */
+    margin-bottom: 18px;                                                                    /* Margen inferior para separar del contenido */
+    animation: logoPop 1s;                                                                  /* Animación de “pop” para logo */
+  }
+  
+  @keyframes logoPop {
+    0% { transform: scale(0.7); opacity: 0; }                                             /* Inicia pequeño e invisible */
+    80% { transform: scale(1.1); opacity: 1; }                                            /* Crece ligeramente y se hace visible */
+    100% { transform: scale(1); }                                                          /* Regresa a tamaño normal */
+  }
+  
+  .section-title {
+    font-size: 2rem;                                                                       /* Tamaño grande para título de sección */
+    font-weight: 700;                                                                      /* Fuente en negrita */
+    margin: 0 0 24px 0;                                                                    /* Margen inferior para separar secciones */
+    color: var(--color-texto);                                                             /* Color de texto principal */
+    background: #ffffffc9;                                                                 /* Fondo blanco con opacidad */
+    text-align: center;                                                                    /* Texto centrado */
+  }
+  
+  .input-field,
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="date"],
+  select,
+  textarea {
+    background: #fff !important;                                                           /* Fondo blanco (importante para sobreescribir) */
+    color: #bdc7f8 !important;                                                             /* Color de texto claro (importante) */
+    border: 1.5px solid #ccc;                                                              /* Borde gris claro y delgado */
+    border-radius: 8px;                                                                    /* Bordes redondeados suaves */
+    font-size: 1.08rem;                                                                    /* Tamaño de fuente legible */
+    padding: 14px 12px;                                                                    /* Espaciado interno para comodidad */
+    transition: border 0.2s, box-shadow 0.2s;                                             /* Transiciones suaves para borde y sombra */
+    outline: none;                                                                         /* Quita el contorno por defecto al enfocar */
+  }
