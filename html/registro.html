@@ -19,3 +19,52 @@
   <div class="container"> <!-- Contenedor principal de la página -->
     <div class="section-title">Registro</div> <!-- Título de la sección -->
     <hr class="divider"> <!-- Línea divisoria decorativa -->
+
+    <form id="registroForm" action="../html/crear_contraseña.html" method="get" autocomplete="on" novalidate> <!-- Formulario de registro -->
+      
+        <div class="input-group"> <!-- Grupo de entrada -->
+          <input class="input-field" type="text" placeholder="Nombre Completo" required autocomplete="name" aria-label="Nombre completo"> <!-- Campo para nombre completo -->
+        </div>
+  
+        <div class="input-group"> <!-- Grupo de entrada -->
+          <input class="input-field" type="text" placeholder="No. Identificación" required autocomplete="off" aria-label="Número de identificación"> <!-- Campo para número de identificación -->
+        </div>
+  
+        <div class="input-group"> <!-- Grupo de entrada -->
+          <input class="input-field" type="email" placeholder="E-mail" required autocomplete="email" aria-label="Correo electrónico"> <!-- Campo para correo electrónico -->
+        </div>
+  
+        <div class="input-group"> <!-- Grupo de entrada -->
+          <input class="input-field" type="tel" placeholder="Teléfono" required autocomplete="tel" aria-label="Teléfono"> <!-- Campo para número de teléfono -->
+        </div>
+  
+        <div class="input-group"> <!-- Grupo de entrada -->
+          <select class="input-field" required autocomplete="address-level2" aria-label="Ciudad"> <!-- Menú desplegable de ciudades -->
+            <option value="" disabled selected>Ciudad</option> <!-- Opción por defecto deshabilitada -->
+            <option>Bogotá</option>
+            <option>Medellín</option>
+            <option>Barranquilla</option>
+            <option>Cali</option>
+            <option>Cartagena</option>
+            <option>Bucaramanga</option>
+            <option>Pereira</option>
+            <option>Manizales</option>
+            <option>Santa Marta</option>
+            <option>Cúcuta</option>
+            <option>Ibagué</option>
+            <option>Villavicencio</option>
+            <option>Pasto</option>
+            <option>Montería</option>
+            <option>Valledupar</option>
+            <option>Armenia</option>
+            <option>Sincelejo</option>
+            <option>Popayán</option>
+            <option>Tunja</option>
+            <option>Riohacha</option>
+            <option>Quibdó</option>
+            <option>Neiva</option>
+            <option>Yopal</option>
+            <option>Mocoa</option>
+            <option>Leticia</option>
+          </select>
+        </div>
