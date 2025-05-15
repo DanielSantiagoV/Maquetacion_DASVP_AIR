@@ -16,3 +16,29 @@
       <p class="header-slogan">Vuela a tus sueños ✨</p> <!-- Lema inspirador -->
     </div>
   </div>
+
+  <!-- ======= CONTENEDOR PRINCIPAL ======= -->
+  <div class="container buscar-box"> <!-- Contenedor central con clase específica para búsqueda -->
+
+    <!-- ======= PERFIL DE USUARIO ACTIVO ======= -->
+    <div class="user-profile"> <!-- Sección de perfil de usuario -->
+      <div class="user-avatar"> <!-- Imagen del usuario -->
+        <img src="../img/avatar_default.svg" alt="Avatar de usuario"> <!-- Avatar genérico -->
+      </div>
+      <div class="user-info"> <!-- Información textual del usuario -->
+        <div class="user-name">John Doe</div> <!-- Nombre de usuario -->
+        <a href="#" class="logout-link">Cerrar Sesión</a> <!-- Enlace para cerrar sesión -->
+      </div>
+    </div>
+
+    <!-- ======= TÍTULO DE LA SECCIÓN DE BÚSQUEDA ======= -->
+    <h2 class="section-title">Búsqueda de Vuelos</h2>
+
+    <!-- ======= FORMULARIO DE BÚSQUEDA DE VUELOS ======= -->
+    <form id="buscarForm" action="#" method="get" autocomplete="on" novalidate> <!-- Formulario GET, sin validación HTML nativa -->
+
+      <!-- Checkbox para vuelo de solo ida -->
+      <div class="input-group checkbox-group"> 
+        <input type="checkbox" id="soloida" name="soloida"> <!-- Casilla de verificación -->
+        <label for="soloida">Solo ida</label> <!-- Etiqueta asociada -->
+      </div>
