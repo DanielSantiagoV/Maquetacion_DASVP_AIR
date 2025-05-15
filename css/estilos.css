@@ -784,3 +784,70 @@ textarea:focus {                                                                
     transition: background 0.2s, box-shadow 0.2s, transform 0.1s; /* Transiciones suaves */
   }
   
+  .recuperar-box .btn-primary:hover {
+    background: #1769aa;                                     /* Cambia a un azul más oscuro al pasar el cursor */
+    box-shadow: 0 4px 16px rgba(33,150,243,0.18);            /* Aumenta la sombra para un efecto de elevación */
+    transform: translateY(-2px) scale(1.02);                 /* Eleva ligeramente el botón y lo agranda un poco */
+  }
+  
+  /* --- CREAR CONTRASEÑA --- */
+  .crearpass-box {
+    background: var(--color-blanco);                         /* Fondo blanco utilizando variable */
+    border-radius: var(--border-radius);                     /* Bordes redondeados con valor definido por variable */
+    box-shadow: 0 4px 24px var(--color-shadow);              /* Sombra suave alrededor */
+    padding: 30px;                                           /* Espaciado interno uniforme */
+    max-width: 420px;                                        /* Ancho máximo del contenedor */
+    margin: 30px auto;                                       /* Centrado horizontal y separación vertical */
+    animation: fadeIn 0.6s ease-out;                         /* Animación de entrada suave */
+  }
+  
+  .crearpass-box .section-title {
+    font-size: 1.8rem;                                       /* Tamaño de fuente grande para título */
+    font-weight: 700;                                        /* Título en negrita */
+    color: var(--color-texto);                               /* Color del texto definido por variable */
+    text-align: center;                                      /* Texto centrado */
+    margin-bottom: 20px;                                     /* Espacio inferior */
+  }
+  
+  .crearpass-box .divider {
+    border: none;                                            /* Sin bordes laterales ni inferior */
+    border-top: 1px solid var(--color-gris);                 /* Línea superior gris como separador */
+    margin: 0 0 25px 0;                                      /* Margen inferior */
+    width: 100%;                                             /* Ocupar todo el ancho disponible */
+  }
+  
+  .crearpass-box .input-group {
+    margin-bottom: 20px;                                     /* Espacio inferior entre campos de entrada */
+  }
+  
+  .crearpass-box .input-field {
+    width: 95%;                                              /* Ancho del campo ligeramente menor al 100% */
+    padding: 15px;                                           /* Espaciado interno para el texto */
+    border: 1.5px solid var(--color-gris);                   /* Borde gris definido por variable */
+    border-radius: 8px;                                      /* Bordes redondeados */
+    font-size: 1rem;                                         /* Tamaño estándar del texto */
+    background: var(--color-blanco);                         /* Fondo blanco */
+    transition: all 0.3s ease;                               /* Transición suave en todos los cambios */
+  }
+  
+  .crearpass-box .input-field:focus {
+    border-color: var(--color-principal);                   /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 0 2px rgba(123, 47, 242, 0.2);           /* Sombra suave violeta alrededor del borde */
+    outline: none;                                           /* Elimina contorno predeterminado */
+  }
+  
+  .crearpass-box .btn-primary {
+    width: 100%;                                             /* El botón ocupa todo el ancho disponible */
+    background: linear-gradient(90deg, var(--color-principal), var(--color-acento)); /* Degradado de colores principales */
+    color: var(--color-blanco);                              /* Texto blanco */
+    border: none;                                            /* Sin borde */
+    border-radius: 8px;                                      /* Bordes redondeados */
+    padding: 18px;                                           /* Espaciado interno amplio */
+    font-size: 1.1rem;                                       /* Tamaño de fuente medio-grande */
+    font-weight: 900;                                        /* Fuente muy gruesa para resaltar */
+    cursor: pointer;                                         /* Cursor tipo mano al pasar el mouse */
+    box-shadow: 0 2px 8px var(--color-shadow);               /* Sombra inferior sutil */
+    transition: all 0.3s ease;                               /* Transiciones suaves en todos los cambios */
+    margin-top: 10px;                                        /* Separación superior respecto a otros elementos */
+  }
+  
