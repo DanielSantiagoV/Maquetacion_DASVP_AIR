@@ -329,3 +329,102 @@ textarea:focus {                                                                
     display: block;                                                                 /* Mostrar en bloque para separar del input */
   }
   
+  /* Error visual */
+.error-msg {
+    color: var(--color-acento);        /* Color de texto para errores */
+    font-size: 1rem;                   /* Tamaño de fuente estándar */
+    margin-bottom: 10px;              /* Margen inferior para separar del siguiente elemento */
+    margin-top: -8px;                 /* Margen superior negativo para ajustar espacio */
+    text-align: left;                 /* Texto alineado a la izquierda */
+    width: 100%;                     /* Ocupa todo el ancho disponible */
+    display: none;                   /* Oculto por defecto */
+  }
+  .error-msg.active {
+    display: block;                  /* Mostrar cuando está activo */
+  }
+  
+  body {
+    margin: 0;                      /* Eliminar margen por defecto */
+    font-family: 'Montserrat', Arial, sans-serif; /* Tipografía principal */
+    background-color: #f9f9f9;     /* Fondo gris muy claro */
+  }
+  
+  .container {
+    max-width: 400px;               /* Ancho máximo para centrar contenido */
+    margin: 60px auto;              /* Centrado horizontal y margen superior */
+    background-color: #fff;         /* Fondo blanco */
+    border-radius: 12px;            /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(190, 167, 167, 0.1); /* Sombra suave */
+    padding: 30px;                  /* Espaciado interno */
+    text-align: center;             /* Centrado del texto */
+    position: relative;             /* Posicionamiento para capas */
+    z-index: 1;                    /* Aparece por encima de elementos con z menor */
+    animation: box-fadein 1s cubic-bezier(.4,1.4,.6,1) 0.2s both; /* Animación de aparición */
+  }
+  
+  /* El resto de los estilos de las otras vistas se mantienen igual, pero ahora usan la nueva paleta y mejoras */
+  
+  .user-profile {
+    display: flex;                  /* Flexbox para alinear horizontalmente */
+    align-items: center;            /* Centrar verticalmente */
+    gap: 12px;                     /* Espacio entre elementos */
+    margin-bottom: 16px;           /* Espacio debajo del perfil */
+    padding: 8px 0;                /* Espaciado vertical interno */
+    border-bottom: 1px solid #e0e0e0; /* Línea sutil separadora */
+  }
+  
+  .user-avatar {
+    width: 50px;                   /* Tamaño fijo ancho */
+    height: 50px;                  /* Tamaño fijo alto */
+    border-radius: 50%;            /* Circular */
+    background: #f0f0f0;           /* Fondo gris claro */
+    display: flex;                 /* Flex para alinear contenido dentro */
+    align-items: left;             /* Alinear contenido hacia la izquierda */
+    justify-content: left;         /* Justificar contenido a la izquierda */
+    font-size: 2.2rem;             /* Tamaño del texto o icono */
+    color: #fff;                   /* Color blanco para texto o icono */
+    border: 2px solid #7b2ff2;    /* Borde con color vibrante */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+  }
+  
+  .user-avatar img {
+    width: 100%;                  /* Imagen ocupa todo el contenedor */
+    height: 100%;                 /* Altura completa */
+    border-radius: 50%;           /* Imagen circular */
+    object-fit: cover;            /* Mantener proporción y rellenar */
+  }
+  
+  .user-info {
+    flex: 1;                     /* Ocupa el espacio restante */
+    display: flex;               /* Flex para layout vertical */
+    flex-direction: column;      /* Dirección de columna */
+    justify-content: center;     /* Centrar verticalmente */
+  }
+  
+  .user-info h3 {
+    margin: 0;                   /* Sin márgenes */
+    font-size: 1.1rem;           /* Tamaño legible */
+    color: #333;                 /* Color texto oscuro suave */
+    font-weight: 600;            /* Peso medio */
+    line-height: 1.4;            /* Espaciado entre líneas */
+  }
+  
+  .user-info p {
+    margin: 4px 0;               /* Márgenes verticales pequeños */
+    font-size: 0.9rem;           /* Texto más pequeño */
+    color: #7b2ff2;              /* Color llamativo para el texto */
+  }
+  
+  .user-info .user-role {
+    font-size: 0.85rem;          /* Texto pequeño para rol */
+    color: #666;                 /* Gris neutro */
+  }
+  
+  .user-name {
+    font-size: 1.1rem;           /* Tamaño consistente */
+    color: #232946;              /* Color texto oscuro */
+    margin: 0;                   /* Sin márgenes */
+    font-weight: 700;            /* Negrita */
+    text-align: left;            /* Alineación a la izquierda */
+  }
+  
