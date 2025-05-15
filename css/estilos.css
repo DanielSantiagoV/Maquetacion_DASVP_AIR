@@ -248,3 +248,84 @@ textarea:focus {                                                                
     margin: 40px auto;                                                            /* Margen superior e inferior y centrado horizontal */
   }
 }
+
+/* Resto de estilos generales y de otras vistas aquí... */
+
+@keyframes headerFadeIn {                                                           /* Animación para fade-in desde arriba */
+    from { opacity: 0; transform: translateY(-40px); }                              /* Comienza invisible y desplazado hacia arriba */
+    to { opacity: 1; transform: translateY(0); }                                   /* Termina visible y en posición normal */
+  }
+  
+  /* --- BOTÓN CON ICONO Y MICROINTERACCIONES --- */
+  .btn-primary {                                                                     /* Botón principal con diseño moderno */
+    width: 100%;                                                                    /* Ocupa todo el ancho del contenedor */
+    background: linear-gradient(90deg, var(--color-principal) 0%, var(--color-acento) 100%); /* Degradado horizontal */
+    color: var(--color-blanco);                                                     /* Texto blanco */
+    border: none;                                                                   /* Sin borde */
+    border-radius: 8px;                                                             /* Bordes redondeados */
+    padding: 16px 0;                                                                /* Padding vertical */
+    font-size: 1.1rem;                                                              /* Tamaño del texto */
+    font-weight: 700;                                                               /* Negrita */
+    margin-top: 8px;                                                                /* Margen superior */
+    cursor: pointer;                                                                /* Cursor puntero */
+    box-shadow: 0 2px 8px var(--color-shadow);                                     /* Sombra suave */
+    transition: background 0.3s, box-shadow 0.3s, transform 0.15s;                  /* Transiciones para hover y click */
+    display: flex;                                                                  /* Flex para alinear icono y texto */
+    align-items: center;                                                            /* Alineación vertical centrada */
+    justify-content: center;                                                        /* Centrado horizontal */
+    gap: 10px;                                                                      /* Espacio entre icono y texto */
+    position: relative;                                                             /* Para posicionar elementos hijos si es necesario */
+  }
+  
+  .btn-primary:active {                                                              /* Estado activo (clickeado) */
+    transform: scale(0.98);                                                         /* Reduce un poco el tamaño */
+    box-shadow: 0 1px 4px var(--color-shadow);                                     /* Sombra más tenue */
+  }
+  
+  .btn-primary:hover {                                                               /* Estado hover */
+    background: linear-gradient(90deg, var(--color-acento) 0%, var(--color-principal) 100%); /* Invertir degradado */
+    box-shadow: 0 4px 16px var(--color-shadow);                                    /* Sombra más grande e intensa */
+    transform: translateY(-2px) scale(1.02);                                       /* Levantar y aumentar ligeramente */
+  }
+  
+  .btn-primary .btn-icon {                                                           /* Icono dentro del botón */
+    font-size: 1.3em;                                                               /* Tamaño un poco mayor */
+    display: inline-flex;                                                           /* Flex para alineación */
+    align-items: center;                                                            /* Centrar vertical */
+    margin-right: 4px;                                                              /* Espacio a la derecha del icono */
+  }
+  
+  /* Spinner para feedback visual */
+  .spinner {                                                                        /* Círculo giratorio para carga */
+    border: 3px solid #e0e0e0;                                                      /* Borde gris claro */
+    border-top: 3px solid var(--color-acento);                                     /* Borde superior con color acento */
+    border-radius: 50%;                                                             /* Circular */
+    width: 22px;                                                                    /* Ancho fijo */
+    height: 22px;                                                                   /* Alto fijo */
+    animation: spin 0.8s linear infinite;                                          /* Animación de giro continuo */
+    display: inline-block;                                                          /* Mostrar en línea */
+    vertical-align: middle;                                                         /* Alineación vertical en medio */
+  }
+  @keyframes spin {                                                                  /* Definición de la animación giro */
+    0% { transform: rotate(0deg); }                                                 /* Giro inicio */
+    100% { transform: rotate(360deg); }                                             /* Giro completo */
+  }
+  
+  /* --- INPUTS Y ACCESIBILIDAD --- */
+  .input-group {                                                                    /* Grupo de input para organización */
+    width: 98%;                                                                     /* Casi todo el ancho del contenedor */
+    margin-bottom: 18px;                                                            /* Margen inferior */
+  }
+  
+  .input-field[aria-invalid="true"] {                                               /* Input con error de validación accesible */
+    border-color: var(--color-acento);                                              /* Borde con color acento */
+    box-shadow: 0 0 0 2px var(--color-acento);                                     /* Sombra para destacar error */
+  }
+  
+  .input-label {                                                                    /* Etiqueta para inputs */
+    font-size: 1rem;                                                                /* Tamaño estándar */
+    color: var(--color-principal);                                                  /* Color principal */
+    margin-bottom: 4px;                                                             /* Margen inferior pequeño */
+    display: block;                                                                 /* Mostrar en bloque para separar del input */
+  }
+  
