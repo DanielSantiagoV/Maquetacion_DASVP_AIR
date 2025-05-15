@@ -18,3 +18,32 @@
       <div class="header-slogan">Vuela a tus sueños ✨</div> <!-- Eslogan de la aerolínea -->
     </div>
   </div>
+
+  <div class="container login-box"> <!-- Contenedor del formulario de inicio de sesión -->
+    <div class="section-title">Iniciar Sesión</div> <!-- Título de la sección -->
+
+    <form action="../html/menu.html" method="get" autocomplete="on"> <!-- Formulario que redirige al menú al enviar -->
+      
+      <div class="input-group"> <!-- Grupo de entrada para el email -->
+        <input class="input-field" type="email" id="usuario" name="usuario" placeholder="Email" required autocomplete="email"> <!-- Campo de correo -->
+      </div>
+
+      <div class="input-group"> <!-- Grupo de entrada para la contraseña -->
+        <input class="input-field" type="password" id="password" name="password" placeholder="Contraseña" required autocomplete="current-password"> <!-- Campo de contraseña -->
+      </div>
+
+      <div class="remember-row"> <!-- Fila para la opción de recordar -->
+        <input type="checkbox" id="recordar" name="recordar"> <!-- Checkbox para recordar sesión -->
+        <label for="recordar">Recordar mis datos</label> <!-- Etiqueta del checkbox -->
+      </div>
+
+      <button class="btn-primary" type="submit"><span class="btn-icon">&#128274;</span> INGRESAR</button> <!-- Botón de envío con ícono de candado -->
+    </form>
+
+    <div class="login-links"> <!-- Enlaces relacionados con el inicio de sesión -->
+      <a href="../html/registro.html">Crear cuenta</a> <!-- Enlace para registrarse -->
+      <a href="../html/recuperar.html">¿Has olvidado tu contraseña?</a> <!-- Enlace para recuperar la contraseña -->
+    </div>
+  </div>
+</body>
+</html>
