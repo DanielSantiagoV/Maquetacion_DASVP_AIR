@@ -23,8 +23,23 @@
     <h2 class="section-title">Crear Contraseña</h2> <!-- Título de sección -->
     <hr class="divider"> <!-- Línea divisoria -->
 
-    <!-- Campo para confirmar la contraseña ingresada -->
-    <div class="input-group">
+    <!-- FORMULARIO DE CREACIÓN DE CONTRASEÑA -->
+    <form action="../html/menu.html" method="get" autocomplete="off"> <!-- Enviar datos por GET a menú -->
+
+      <!-- Campo para ingresar la nueva contraseña -->
+      <div class="input-group"> <!-- Agrupador para etiqueta e input -->
+        <label for="nuevaPassword" class="input-label">Nueva contraseña</label> <!-- Etiqueta accesible -->
+        <input 
+          id="nuevaPassword" 
+          class="input-field" 
+          type="password" 
+          placeholder="Ingresa tu nueva contraseña" required minlength="8" autocomplete="new-password" 
+        >
+        <div class="password-hint">Mínimo 8 caracteres</div> <!-- Pista visual para el usuario -->
+      </div>
+
+      <!-- Campo para confirmar la contraseña ingresada -->
+      <div class="input-group">
         <label for="confirmarPassword" class="input-label">Confirmar contraseña</label> <!-- Etiqueta accesible -->
         <input 
           id="confirmarPassword" 
