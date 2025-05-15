@@ -625,74 +625,80 @@ textarea:focus {                                                                
     color: #f357a8;                 /* Cambia a rosa al pasar el cursor */
   }
   
-  /* --- REGISTRO --- */
+/* --- REGISTRO --- */
 .registro-box {
-    margin-top: 32px;
-    padding-top: 48px;
-    background: var(--color-blanco);
-    border-radius: 18px 18px 0 0;
-    box-shadow: 0 4px 24px var(--color-shadow);
-    max-width: 420px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    animation: fadeIn 0.7s;
-    transition: box-shadow 0.3s, background 0.3s;
+    margin-top: 32px;                                /* Espacio superior para separar de otros elementos */
+    padding-top: 48px;                               /* Espacio interno superior */
+    background: var(--color-blanco);                 /* Fondo blanco (usando variable personalizada) */
+    border-radius: 18px 18px 0 0;                    /* Bordes superiores redondeados */
+    box-shadow: 0 4px 24px var(--color-shadow);      /* Sombra para dar efecto de elevación */
+    max-width: 420px;                                /* Ancho máximo centrado */
+    margin-left: auto;                               /* Centrado horizontal */
+    margin-right: auto;                              /* Centrado horizontal */
+    display: flex;                                   /* Contenedor flexible */
+    flex-direction: column;                          /* Elementos en columna */
+    align-items: center;                             /* Centra los elementos horizontalmente */
+    animation: fadeIn 0.7s;                          /* Animación de entrada suave */
+    transition: box-shadow 0.3s, background 0.3s;     /* Transiciones suaves en sombra y fondo */
   }
   
   .divider {
-    border: none;
-    border-top: 1.5px solid #ececec;
-    margin: 0 0 24px 0;
-    width: 100%;
+    border: none;                                    /* Sin borde lateral */
+    border-top: 1.5px solid #ececec;                 /* Línea divisoria superior suave */
+    margin: 0 0 24px 0;                              /* Solo margen inferior */
+    width: 100%;                                     /* Ocupar todo el ancho del contenedor */
   }
   
   .registro-box .section-title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 12px;
-    color: #222;
-    text-align: center;
+    font-size: 2rem;                                 /* Título grande */
+    font-weight: 700;                                /* Negrita */
+    margin-bottom: 12px;                             /* Espacio inferior */
+    color: #222;                                     /* Color oscuro para buena legibilidad */
+    text-align: center;                              /* Centrado */
   }
+  
   .registro-box .input-group {
-    width: 100%;
-    margin-bottom: 18px;
+    width: 100%;                                     /* Que cada grupo de input ocupe todo el ancho */
+    margin-bottom: 18px;                             /* Espacio inferior entre campos */
   }
+  
   .registro-box .input-field {
-    width: 100%;
-    padding: 14px 12px;
-    border: 1.5px solid #ccc;
-    border-radius: 8px;
-    font-size: 1.08rem;
-    transition: border 0.2s, box-shadow 0.2s, background 0.2s;
-    background: #fafbff;
-    outline: none;
+    width: 100%;                                     /* Campo ocupa todo el ancho */
+    padding: 14px 12px;                              /* Espaciado interno cómodo */
+    border: 1.5px solid #ccc;                        /* Borde gris claro */
+    border-radius: 8px;                              /* Esquinas redondeadas */
+    font-size: 1.08rem;                              /* Tamaño de fuente adecuado */
+    transition: border 0.2s, box-shadow 0.2s, background 0.2s; /* Transiciones suaves */
+    background: #fafbff;                             /* Fondo ligeramente azulado para diferenciar */
+    outline: none;                                   /* Elimina borde azul al enfocar */
   }
+  
   .registro-box .input-field:focus {
-    border: 1.5px solid #7b2ff2;
-    box-shadow: 0 0 0 2px #e6e0fa;
-    background: #fff;
+    border: 1.5px solid #7b2ff2;                     /* Borde violeta al enfocar */
+    box-shadow: 0 0 0 2px #e6e0fa;                   /* Sombra externa suave */
+    background: #fff;                                /* Fondo blanco al enfocar */
   }
+  
   .registro-box select.input-field {
-    background-image: url('data:image/svg+xml;utf8,<svg fill="gray" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
-    background-repeat: no-repeat;
-    background-position: right 12px center;
-    background-size: 22px 22px;
-    padding-right: 38px;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="gray" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* Ícono personalizado para desplegable */
+    background-repeat: no-repeat;                    /* No se repite la imagen */
+    background-position: right 12px center;          /* Posición del ícono al lado derecho centrado */
+    background-size: 22px 22px;                      /* Tamaño del ícono */
+    padding-right: 38px;                             /* Espacio para no tapar el ícono */
   }
+  
   .registro-box .btn-primary {
-    width: 100%;
-    background: #0e1316;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    padding: 16px 0;
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-top: 8px;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    width: 100%;                                     /* Botón ocupa todo el ancho del contenedor */
+    background: #0e1316;                             /* Fondo oscuro elegante */
+    color: #fff;                                     /* Texto blanco */
+    border: none;                                    /* Sin borde */
+    border-radius: 8px;                              /* Bordes redondeados */
+    padding: 16px 0;                                 /* Altura generosa para el botón */
+    font-size: 1.1rem;                               /* Tamaño de letra medio */
+    font-weight: 700;                                /* Negrita */
+    margin-top: 8px;                                 /* Separación del campo anterior */
+    cursor: pointer;                                 /* Cursor de mano al pasar por encima */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);         /* Sombra para efecto elevado */
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s; /* Transiciones suaves */
   }
+  
