@@ -169,3 +169,82 @@
     transition: border 0.2s, box-shadow 0.2s;                                             /* Transiciones suaves para borde y sombra */
     outline: none;                                                                         /* Quita el contorno por defecto al enfocar */
   }
+
+  .input-field:focus,                                                               /* Cuando el input personalizado está enfocado */
+input[type="text"]:focus,                                                         /* Input de texto enfocado */
+input[type="email"]:focus,                                                        /* Input de email enfocado */
+input[type="password"]:focus,                                                     /* Input de contraseña enfocado */
+input[type="tel"]:focus,                                                          /* Input de teléfono enfocado */
+input[type="date"]:focus,                                                         /* Input de fecha enfocado */
+select:focus,                                                                     /* Select enfocado */
+textarea:focus {                                                                  /* Área de texto enfocada */
+  border: 1.5px solid var(--color-principal);                                    /* Borde con color principal */
+  box-shadow: 0 0 0 2px var(--color-secundario);                                 /* Sombra de caja con color secundario */
+  background: #fff !important;                                                    /* Fondo blanco obligatorio */
+  color: #090911ee !important;                                                    /* Color de texto casi negro */
+}
+
+.remember-row {                                                                    /* Contenedor para checkbox y etiqueta */
+  width: 100%;                                                                    /* Ocupa todo el ancho disponible */
+  display: flex;                                                                  /* Usar flexbox para alinear */
+  align-items: center;                                                            /* Centrar verticalmente */
+  gap: 8px;                                                                       /* Espacio entre elementos */
+  margin-bottom: 18px;                                                            /* Margen inferior */
+}
+
+.remember-row label {                                                              /* Estilo para etiqueta de checkbox */
+  font-size: 1rem;                                                                /* Tamaño de fuente normal */
+  color: #a70d0d;                                                                 /* Color rojo oscuro */
+  cursor: pointer;                                                                /* Cursor tipo puntero para indicar clic */
+}
+
+.btn-primary {                                                                     /* Botón principal */
+  width: 100%;                                                                    /* Ancho completo */
+  background: linear-gradient(90deg, var(--color-principal) 0%, var(--color-acento) 100%);  /* Degradado de colores */
+  color: var(--color-blanco);                                                     /* Texto blanco */
+  border: none;                                                                   /* Sin borde */
+  border-radius: 8px;                                                             /* Bordes redondeados */
+  padding: 16px 0;                                                                /* Espaciado vertical */
+  font-size: 1.1rem;                                                              /* Tamaño de fuente */
+  font-weight: 700;                                                               /* Texto en negrita */
+  margin-top: 8px;                                                                /* Margen superior */
+  cursor: pointer;                                                                /* Cursor puntero */
+  box-shadow: 0 2px 8px var(--color-shadow);                                     /* Sombra suave */
+  transition: background 0.3s, box-shadow 0.3s, transform 0.15s;                  /* Transiciones suaves */
+}
+
+.btn-primary:hover {                                                               /* Efecto hover para botón */
+  background: linear-gradient(90deg, var(--color-acento) 0%, var(--color-principal) 100%); /* Inversión de degradado */
+  box-shadow: 0 4px 16px var(--color-shadow);                                    /* Sombra más intensa */
+  transform: translateY(-2px) scale(1.02);                                       /* Ligero desplazamiento y escala */
+}
+
+.login-links {                                                                     /* Contenedor para enlaces en login */
+  width: 100%;                                                                    /* Ancho completo */
+  display: flex;                                                                  /* Flexbox para disposición */
+  flex-direction: column;                                                         /* Columna vertical */
+  align-items: center;                                                            /* Centrado horizontal */
+  margin-top: 22px;                                                               /* Margen superior */
+  gap: 8px;                                                                       /* Espacio entre enlaces */
+}
+
+.login-links a {                                                                   /* Estilo para enlaces */
+  color: var(--color-principal);                                                  /* Color principal */
+  text-decoration: none;                                                          /* Sin subrayado */
+  font-size: 1.05rem;                                                             /* Tamaño de fuente */
+  transition: color 0.2s;                                                          /* Transición de color suave */
+}
+
+.login-links a:hover {                                                             /* Hover para enlaces */
+  color: var(--color-acento);                                                     /* Color acento */
+  text-decoration: underline;                                                     /* Subrayado */
+}
+
+/* Responsive solo móvil */
+@media (min-width: 600px) {                                                        /* Para pantallas mayores a 600px */
+  .login-box {                                                                    /* Modificaciones para caja login */
+    min-height: unset;                                                            /* Sin altura mínima fija */
+    border-radius: 24px;                                                          /* Bordes más redondeados */
+    margin: 40px auto;                                                            /* Margen superior e inferior y centrado horizontal */
+  }
+}
