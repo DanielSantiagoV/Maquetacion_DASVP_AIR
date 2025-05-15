@@ -551,3 +551,77 @@ textarea:focus {                                                                
     box-shadow: 0 4px 16px var(--color-shadow); /* Sombra más pronunciada al hacer hover */
   }
   
+  .flight-icon {
+    width: 36px;                     /* Ancho fijo del ícono de vuelo */
+    height: 36px;                    /* Alto fijo del ícono */
+    color: #7b2ff2;                  /* Color violeta para destacar */
+    flex-shrink: 0;                  /* Evita que se reduzca en tamaño dentro de un flex container */
+  }
+  
+  .flight-info {
+    flex: 1;                         /* Ocupa todo el espacio restante disponible */
+  }
+  
+  .flight-time {
+    font-weight: 700;                /* Negrita para resaltar la hora */
+    font-size: 1.1rem;               /* Tamaño de fuente cómodo y visible */
+    color: #232946;                  /* Color oscuro para buena legibilidad */
+  }
+  
+  .flight-duration {
+    font-size: 0.95rem;              /* Tamaño ligeramente más pequeño */
+    color: #232946;                  /* Color uniforme con la hora */
+  }
+  
+  .flight-code {
+    font-size: 0.95rem;              /* Tamaño moderado */
+    color: #e40000;                  /* Color rojo para llamar la atención (ej. código del vuelo) */
+    text-align: right;              /* Alineación a la derecha */
+  }
+  
+  .flight-price {
+    font-size: 1.2rem;               /* Tamaño mayor para destacar el precio */
+    font-weight: 700;                /* Negrita para enfatizar */
+    color: #7b2ff2;                  /* Color violeta característico del diseño */
+    text-align: right;              /* Alineación a la derecha */
+  }
+  
+  .flight-status {
+    font-size: 1.1rem;               /* Tamaño intermedio */
+    font-weight: 700;                /* Negrita para resaltar el estado */
+    color: #4caf50;                  /* Verde para estado (ej. activo, confirmado) */
+    text-align: right;              /* Alineación a la derecha */
+  }
+  
+  /* Estilos para inputs y botón */
+  
+  .input-group {
+    margin-bottom: 20px;            /* Espacio inferior entre grupos de formulario */
+  }
+  
+  .input-label {
+    display: block;                 /* Hace que la etiqueta ocupe toda la línea */
+    font-size: 1rem;                /* Tamaño legible */
+    margin-bottom: 6px;             /* Espacio entre la etiqueta y el campo de entrada */
+    color: #7b2ff2;                 /* Color violeta para destacar el texto */
+  }
+  
+  .input-field {
+    width: 100%;                    /* El campo se expande a todo el ancho disponible */
+    padding: 12px;                  /* Espaciado interno para mejor usabilidad */
+    border: 1px solid #ccc;         /* Borde gris claro */
+    border-radius: 6px;             /* Esquinas ligeramente redondeadas */
+    font-size: 16px;                /* Tamaño de fuente adecuado para inputs */
+  }
+  
+  .link {
+    color: #2196f3;                 /* Azul para enlaces, estilo común de web */
+    text-decoration: none;          /* Quita el subrayado por defecto */
+    font-size: 1rem;                /* Tamaño estándar */
+    transition: color 0.2s;         /* Transición suave al cambiar de color */
+  }
+  
+  .link:hover {
+    color: #f357a8;                 /* Cambia a rosa al pasar el cursor */
+  }
+  
