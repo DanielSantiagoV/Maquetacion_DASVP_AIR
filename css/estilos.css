@@ -702,3 +702,85 @@ textarea:focus {                                                                
     transition: background 0.2s, box-shadow 0.2s, transform 0.1s; /* Transiciones suaves */
   }
   
+  .registro-box .btn-primary:hover {
+    background: #1769aa;                                     /* Cambia a azul más claro al pasar el mouse */
+    box-shadow: 0 4px 16px rgba(33,150,243,0.18);            /* Sombra más pronunciada en hover */
+    transform: translateY(-2px) scale(1.02);                 /* Efecto de elevación y leve aumento de tamaño */
+  }
+  
+  /* --- RECUPERAR CONTRASEÑA --- */
+  .recuperar-box {
+    margin-top: 32px;                                        /* Espacio superior externo */
+    padding-top: 48px;                                       /* Espacio superior interno */
+    background: var(--color-blanco);                         /* Fondo blanco usando variable */
+    border-radius: 18px 18px 0 0;                            /* Bordes superiores redondeados */
+    box-shadow: 0 4px 24px var(--color-shadow);              /* Sombra suave alrededor */
+    max-width: 420px;                                        /* Ancho máximo centrado */
+    margin-left: auto;                                       /* Centrado horizontal */
+    margin-right: auto;                                      /* Centrado horizontal */
+    display: flex;                                           /* Contenedor flexible */
+    flex-direction: column;                                  /* Elementos en columna */
+    align-items: center;                                     /* Alineación horizontal centrada */
+    animation: fadeIn 0.7s;                                  /* Animación de aparición suave */
+    transition: box-shadow 0.3s, background 0.3s;            /* Transiciones suaves de sombra y fondo */
+  }
+  
+  .recuperar-box .section-title {
+    font-size: 2rem;                                         /* Título grande */
+    font-weight: 700;                                        /* Texto en negrita */
+    margin-bottom: 12px;                                     /* Espacio inferior */
+    color: #222;                                             /* Color oscuro para buena legibilidad */
+    text-align: center;                                      /* Texto centrado */
+  }
+  
+  .recuperar-box .divider {
+    border: none;                                            /* Elimina bordes predeterminados */
+    border-top: 1.5px solid #ececec;                         /* Línea divisoria gris clara */
+    margin: 0 0 24px 0;                                      /* Margen inferior */
+    width: 100%;                                             /* Ocupar todo el ancho disponible */
+  }
+  
+  .recuperar-box .input-group {
+    width: 100%;                                             /* Grupo ocupa todo el ancho */
+    margin-bottom: 18px;                                     /* Espacio entre campos */
+  }
+  
+  .recuperar-box .input-field {
+    width: 100%;                                             /* Campo de entrada de ancho completo */
+    padding: 14px 12px;                                      /* Relleno interno cómodo */
+    border: 1.5px solid #ccc;                                /* Borde gris claro */
+    border-radius: 8px;                                      /* Bordes redondeados */
+    font-size: 1.08rem;                                      /* Tamaño de fuente ligeramente grande */
+    transition: border 0.2s, box-shadow 0.2s, background 0.2s; /* Transiciones suaves en focus */
+    background: #fafbff;                                     /* Fondo azul claro */
+    outline: none;                                           /* Quitar contorno predeterminado */
+  }
+  
+  .recuperar-box .input-field:focus {
+    border: 1.5px solid #7b2ff2;                             /* Borde morado al enfocar */
+    box-shadow: 0 0 0 2px #e6e0fa;                           /* Sombra externa morada clara */
+    background: #fff;                                        /* Fondo blanco al enfocar */
+  }
+  
+  .ayuda-recuperar {
+    color: #000000;                                          /* Texto negro */
+    font-size: 16px;                                         /* Tamaño de fuente estándar */
+    line-height: 1.5;                                        /* Espaciado de línea agradable */
+    margin-bottom: 25px;                                     /* Separación inferior */
+  }
+  
+  .recuperar-box .btn-primary {
+    width: 100%;                                             /* Botón ocupa todo el ancho */
+    background: #2196f3;                                     /* Azul principal de recuperación */
+    color: #fff;                                             /* Texto blanco */
+    border: none;                                            /* Sin borde */
+    border-radius: 8px;                                      /* Bordes redondeados */
+    padding: 16px 0;                                         /* Altura cómoda del botón */
+    font-size: 1.1rem;                                       /* Tamaño de fuente medio */
+    font-weight: 700;                                        /* Texto en negrita */
+    margin-top: 8px;                                         /* Separación superior */
+    cursor: pointer;                                         /* Cursor de mano en hover */
+    box-shadow: 0 2px 8px rgba(33,150,243,0.10);             /* Sombra sutil azul */
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s; /* Transiciones suaves */
+  }
+  
