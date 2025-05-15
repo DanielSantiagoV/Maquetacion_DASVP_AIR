@@ -851,3 +851,97 @@ textarea:focus {                                                                
     margin-top: 10px;                                        /* Separación superior respecto a otros elementos */
   }
   
+  .crearpass-box .btn-primary:hover {
+    background: linear-gradient(90deg, var(--color-acento), var(--color-principal)); /* Inversa el degradado al pasar el mouse */
+    box-shadow: 0 4px 16px var(--color-shadow);                                      /* Aumenta la sombra para destacar el botón */
+    transform: translateY(-2px);                                                     /* Eleva ligeramente el botón */
+  }
+  
+  /* Animación de entrada */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }  /* Empieza invisible y desplazado hacia abajo */
+    to { opacity: 1; transform: translateY(0); }       /* Termina visible y en su posición original */
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {                          /* Estilos para pantallas pequeñas (móviles) */
+    .crearpass-box {
+      padding: 25px 20px;                              /* Reduce el relleno lateral */
+      margin: 20px auto;                               /* Reduce el margen exterior */
+    }
+  
+    .crearpass-box .section-title {
+      font-size: 1.6rem;                               /* Reduce el tamaño del título */
+    }
+  }
+  
+  .menu-saludo {
+    font-size: 1.35rem;                                /* Tamaño mediano para saludo principal */
+    font-weight: 700;                                  /* Negrita */
+    color: #222;                                       /* Gris oscuro */
+    margin-bottom: 4px;                                /* Espacio inferior */
+    text-align: center;                                /* Centrado horizontal */
+  }
+  
+  .menu-sub {
+    font-size: 1.15rem;                                /* Tamaño ligeramente menor al saludo */
+    color: #444;                                       /* Gris medio */
+    margin-bottom: 10px;                               /* Espacio inferior */
+    text-align: center;                                /* Centrado horizontal */
+  }
+  
+  .menu-box .logout-link {
+    color: #7b2ff2;                                    /* Color violeta para el enlace de cerrar sesión */
+    font-size: 1rem;                                   /* Tamaño estándar de texto */
+    text-decoration: underline;                        /* Subrayado */
+    margin-bottom: 18px;                               /* Espacio inferior */
+    margin-top: 2px;                                   /* Espacio superior */
+    display: block;                                    /* Se comporta como un bloque para ocupar todo el ancho */
+    text-align: center;                                /* Centrado horizontal */
+    transition: color 0.2s;                            /* Transición suave de color */
+  }
+  
+  .menu-box .logout-link:hover {
+    color: #f357a8;                                    /* Cambia a rosa al pasar el mouse */
+  }
+  
+  .menu-actions {
+    width: 100%;                                       /* Ocupa todo el ancho disponible */
+    display: flex;                                     /* Contenedor flexbox */
+    flex-direction: column;                           /* Apila verticalmente los elementos */
+    gap: 18px;                                         /* Espacio entre los elementos hijos */
+    margin-top: 10px;                                  /* Separación superior */
+  }
+  
+  .menu-card {
+    display: flex;                                     /* Contenedor flexible horizontal */
+    align-items: center;                              /* Centra verticalmente los íconos y texto */
+    background: #fff;                                  /* Fondo blanco */
+    border-radius: 14px;                               /* Bordes redondeados */
+    box-shadow: 0 2px 8px var(--color-shadow);         /* Sombra suave */
+    padding: 18px 16px;                                /* Relleno interno */
+    font-size: 1.15rem;                                /* Tamaño de texto medio */
+    font-weight: 700;                                  /* Texto en negrita */
+    color: #444;                                       /* Color gris oscuro */
+    text-decoration: none;                             /* Quita el subrayado típico de los enlaces */
+    transition: background 0.3s, box-shadow 0.3s, transform 0.15s; /* Transiciones suaves al pasar el mouse */
+    gap: 16px;                                         /* Espacio entre el ícono y el texto */
+    border: 1.5px solid #ececec;                       /* Borde claro */
+    position: relative;                                /* Posición relativa para manejar elementos internos si es necesario */
+  }
+  
+  .menu-card:hover {
+    background: #f5f6fa;                               /* Cambia el fondo a un gris muy claro */
+    box-shadow: 0 4px 16px var(--color-shadow);        /* Sombra más pronunciada al pasar el mouse */
+    transform: translateY(-2px) scale(1.01);           /* Eleva y agranda ligeramente la tarjeta */
+  }
+  
+  .menu-icon {
+    width: 38px;                                       /* Tamaño fijo del ícono */
+    height: 38px;                                      /* Altura fija del ícono */
+    display: flex;                                     /* Flex para centrar contenido */
+    align-items: center;                              /* Centra verticalmente el ícono */
+    justify-content: center;                          /* Centra horizontalmente el ícono */
+    flex-shrink: 0;                                    /* Evita que el ícono se reduzca si el contenedor se estrecha */
+  }
+  
