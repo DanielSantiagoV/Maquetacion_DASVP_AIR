@@ -43,3 +43,58 @@
     position: relative;                                                                  /* Posicionamiento relativo para elementos hijos */
     overflow-x: hidden;                                                                  /* Oculta scroll horizontal para evitar desbordes */
   }
+
+  @keyframes fondoAnimado {
+    0% { background-position: 0% 50%; }                                                     /* Inicio de la animación: posición inicial del fondo */
+    100% { background-position: 100% 50%; }                                                /* Fin de la animación: fondo se mueve horizontalmente al 100% */
+  }
+  
+  .header {
+    background: linear-gradient(to right, #d4145a, #3a7bd5);                               /* Fondo con degradado horizontal entre dos colores */
+    background-size: 200% 200%;                                                            /* Tamaño del fondo para permitir animación */
+    animation: headerAnimado 8s ease infinite alternate;                                  /* Animación de fondo, 8 segundos, va y viene infinitamente */
+    border-radius: 0;                                                                      /* Sin bordes redondeados */
+    padding: 50px 20px 40px;                                                               /* Espaciado interno: arriba 50px, lados 20px, abajo 40px */
+    text-align: center;                                                                    /* Texto centrado */
+    color: #fff;                                                                           /* Color de texto blanco */
+    position: relative;                                                                    /* Posicionamiento relativo para elementos hijos */
+    overflow: hidden;                                                                      /* Oculta cualquier contenido que sobresalga del contenedor */
+  }
+  
+  @keyframes headerAnimado {
+    0% { background-position: 0% 50%; }                                                   /* Animación inicia con fondo en posición inicial */
+    50% { background-position: 100% 50%; }                                                /* Mitad de la animación: fondo desplazado al 100% horizontal */
+    100% { background-position: 0% 50%; }                                                 /* Fin de la animación: vuelve a posición inicial */
+  }
+  
+  .header-glass {
+    backdrop-filter: blur(6px);                                                            /* Efecto de desenfoque detrás del elemento (vidrio esmerilado) */
+    background-color: rgba(255, 255, 255, 0.15);                                           /* Fondo semitransparente blanco */
+    padding: 20px;                                                                         /* Espaciado interno de 20px */
+    border-radius: 12px;                                                                   /* Bordes redondeados de 12px */
+    max-width: 600px;                                                                      /* Ancho máximo del contenedor */
+    margin: 0 auto;                                                                        /* Centra horizontalmente con margen automático */
+    border: 1px solid rgba(255, 255, 255, 0.2);                                           /* Borde sutil blanco semitransparente */
+    animation: glassPop 0.8s ease-out;                                                     /* Animación de entrada suave para el vidrio */
+  }
+  
+  .header-logo {
+    width: 90px;                                                                           /* Ancho fijo para el logo */
+    margin-bottom: 15px;                                                                   /* Margen inferior para separar del contenido siguiente */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));                                    /* Sombra sutil para dar profundidad al logo */
+    transition: transform 0.3s ease;                                                      /* Transición suave para transformaciones */
+  }
+  
+  .header-logo:hover {
+    transform: scale(1.05);                                                               /* Escala ligeramente el logo al pasar el cursor */
+  }
+  
+  .header-title {
+    font-size: 2.5rem; /* 40px aprox */                                                   /* Tamaño grande para el título */
+    font-weight: 800;                                                                      /* Peso extra negrita */
+    margin: 0;                                                                            /* Sin margen */
+    letter-spacing: 1.5px;                                                                 /* Espaciado entre letras */
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);                                           /* Sombra para dar profundidad al texto */
+    line-height: 1.2;                                                                     /* Altura de línea ajustada para buena legibilidad */
+  }
+  
