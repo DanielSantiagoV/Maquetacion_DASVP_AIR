@@ -30,3 +30,51 @@
         <a class="logout-link1" href="index.html">Cerrar Sesión</a> <!-- Enlace para salir del sistema -->
       </div>
     </div>
+
+    <div class="section-title">Búsqueda de Vuelos</div> <!-- Título de la sección -->
+
+    <!-- Formulario para buscar vuelos -->
+    <form id="buscarForm" action="../html/vuelos_disponibles.html" method="get" autocomplete="on" novalidate>
+      <!-- Checkbox para seleccionar solo ida -->
+      <div class="remember-row" style="margin-bottom: 10px;">
+        <input type="checkbox" id="soloida" name="soloida" aria-label="Solo ida"> <!-- Control accesible para solo ida -->
+        <label for="soloida">Solo ida</label> <!-- Etiqueta visible -->
+      </div>
+
+      <!-- Campo de texto para origen -->
+      <div class="input-group">
+        <input class="input-field" type="text" placeholder="Origen" required aria-label="Origen"> <!-- Campo obligatorio con etiqueta accesible -->
+      </div>
+
+      <!-- Campo de texto para destino -->
+      <div class="input-group">
+        <input class="input-field" type="text" placeholder="Destino" required aria-label="Destino"> <!-- Campo obligatorio con etiqueta accesible -->
+      </div>
+
+      <!-- Campo de texto para fecha de salida -->
+      <div class="input-group">
+        <input class="input-field" type="text" placeholder="Fecha de salida" required aria-label="Fecha de salida"> <!-- Campo obligatorio con etiqueta accesible -->
+      </div>
+
+      <!-- Campo de texto para fecha de regreso, visible si no está solo ida -->
+      <div class="input-group" id="regresoGroup">
+        <input class="input-field" type="text" placeholder="Fecha de regreso" aria-label="Fecha de regreso"> <!-- Campo opcional para regreso -->
+      </div>
+
+      <!-- Mensaje de error para validar campos obligatorios, inicialmente oculto -->
+      <div class="error-msg" id="buscarError">Por favor, completa todos los campos obligatorios.</div>
+
+      <!-- Botón para enviar el formulario -->
+      <button class="btn-primary" type="submit" id="buscarBtn">
+        <span class="btn-icon">🔍</span> <!-- Icono de lupa para búsqueda -->
+        BUSCAR
+      </button>
+
+      <!-- Indicador de carga o spinner que se muestra durante la búsqueda, inicialmente oculto -->
+      <div id="buscarSpinner" style="display:none; margin-top:10px; text-align:center;">
+        <span class="spinner"></span>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
