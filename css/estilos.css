@@ -1,0 +1,45 @@
+/* DASVP AIR - Estilos base solo para móvil */                                         /* Comentario general indicando que estos estilos son base para móvil */
+
+/* Montserrat Regular */
+@font-face {
+    font-family: 'Montserrat';                                                          /* Define la familia de fuente como 'Montserrat' */
+    font-style: normal;                                                                  /* Estilo normal (no cursiva) */
+    font-weight: 400;                                                                    /* Peso de fuente normal (regular) */
+    src: url('../fonts/Montserrat-ExtraBoldItalic.woff2') format('woff2'),               /* Ruta y formato para fuente woff2 */
+         url('../fonts/Montserrat-ExtraBoldItalic.woff') format('woff');                 /* Ruta y formato para fuente woff */
+    font-display: swap;                                                                  /* Estrategia para mostrar la fuente: swap evita bloqueos */
+  }
+  
+  /* Montserrat Bold */
+  @font-face {
+    font-family: 'Montserrat';                                                          /* Define la familia de fuente 'Montserrat' para negrita */
+    font-style: normal;                                                                  /* Estilo normal, no cursiva */
+    font-weight: 700;                                                                    /* Peso negrita */
+    src: url('../fonts/Montserrat-ExtraBoldItalic.woff2') format('woff2'),               /* Ruta fuente woff2 para negrita */
+         url('../fonts/Montserrat-ExtraBoldItalic.woff') format('woff');                 /* Ruta fuente woff para negrita */
+    font-display: swap;                                                                  /* Mismo comportamiento de carga que arriba */
+  }
+  
+  /* --- NUEVA PALETA Y FONDO MODERNO --- */
+  :root {
+    --color-principal: #7b2ff2;                                                          /* Variable CSS para color principal púrpura */
+    --color-secundario: #43e9fe;                                                         /* Variable CSS para color secundario azul claro */
+    --color-acento: #f357a8;                                                             /* Variable CSS para color de acento rosa */
+    --color-fondo: #f7fafd;                                                              /* Variable CSS para color de fondo muy claro */
+    --color-blanco: #fff;                                                                /* Variable CSS para color blanco */
+    --color-texto: #232946;                                                              /* Variable CSS para color de texto principal oscuro */
+    --color-gris: #e5e9f2;                                                               /* Variable CSS para color gris claro */
+    --color-shadow: rgba(123,47,242,0.10);                                              /* Variable CSS para sombra con transparencia del color principal */
+  }
+  
+  body {
+    font-family: 'Montserrat', Arial, sans-serif;                                        /* Fuente principal de todo el sitio */
+    margin: 0;                                                                           /* Elimina margen por defecto del body */
+    padding: 0;                                                                          /* Elimina padding por defecto */
+    min-height: 100vh;                                                                   /* Altura mínima 100% de viewport */
+    background-attachment: fixed;                                                        /* Fondo fijo al hacer scroll */
+    background-size: 200% 200%;                                                          /* Tamaño del fondo al doble del contenedor (para animación) */
+    animation: fondoAnimado 5s ease-in-out infinite alternate;                           /* Animación del fondo, duración 5s, va y viene infinitamente */
+    position: relative;                                                                  /* Posicionamiento relativo para elementos hijos */
+    overflow-x: hidden;                                                                  /* Oculta scroll horizontal para evitar desbordes */
+  }
