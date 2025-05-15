@@ -494,3 +494,60 @@ textarea:focus {                                                                
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
   }
   
+  .user-avatar img {
+    width: 24px;                     /* Ancho fijo para la imagen del avatar */
+    height: 24px;                    /* Alto fijo para mantener proporción */
+    object-fit: contain;             /* Ajusta la imagen dentro del contenedor sin recortarla */
+  }
+  
+  .user-name1 {
+    font-size: 1.1rem;               /* Tamaño de fuente legible */
+    color: #232946;                  /* Color oscuro para el texto */
+    margin: 0;                      /* Sin márgenes para controlar mejor el layout */
+    font-weight: 700;                /* Texto en negrita */
+  }
+  
+  .logout-link1 {
+    color: #7b2ff2;                 /* Color violeta para el enlace */
+    font-size: 1.05rem;             /* Tamaño de fuente mediano */
+    margin-left: 2px;               /* Pequeño margen a la izquierda */
+    margin-top: 4px;                /* Margen superior para separación vertical */
+    transition: color 0.2s;         /* Transición suave para el color */
+    text-decoration: underline;     /* Subrayado para indicar que es un enlace */
+    display: inline-block;          /* Permite aplicar márgenes y alineación */
+  }
+  .logout-link1:hover {
+    color: #f357a8;                 /* Color rosa en hover */
+    text-decoration: underline;     /* Mantiene subrayado al hacer hover */
+  }
+  
+  .section-subtitle {
+    font-size: 1.05rem;             /* Tamaño de fuente ligeramente mayor */
+    text-align: center;             /* Centra el texto */
+    color: #eb1010;                 /* Color rojo intenso */
+    margin-bottom: 18px;            /* Espacio debajo para separar del contenido siguiente */
+  }
+  
+  .flight-list {
+    display: flex;                  /* Contenedor flexible */
+    flex-direction: column;         /* Dirección vertical */
+    gap: 16px;                     /* Espaciado entre tarjetas de vuelo */
+    margin-bottom: 24px;            /* Margen inferior para separar del siguiente contenido */
+  }
+  
+  .flight-card {
+    background: #fff;               /* Fondo blanco para las tarjetas */
+    border-radius: 12px;            /* Bordes redondeados para estilo moderno */
+    box-shadow: 0 2px 8px var(--color-shadow); /* Sombra suave para profundidad */
+    display: flex;                  /* Flexbox para contenido interno */
+    align-items: center;            /* Alineación vertical centrada */
+    padding: 16px;                  /* Espacio interno cómodo */
+    gap: 12px;                     /* Separación entre elementos hijos */
+    transition: box-shadow 0.2s;    /* Transición suave en sombra al pasar el cursor */
+    color: #634343;                 /* Color marrón para el texto */
+  }
+  
+  .flight-card:hover {
+    box-shadow: 0 4px 16px var(--color-shadow); /* Sombra más pronunciada al hacer hover */
+  }
+  
