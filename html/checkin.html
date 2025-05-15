@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Documento HTML con idioma español -->
+<head>
+  <meta charset="UTF-8"> <!-- Codificación UTF-8 para caracteres especiales -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> <!-- Diseño responsivo y deshabilita zoom -->
+  <title>Check In | DASVP AIR</title> <!-- Título que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="../css/estilos.css"> <!-- Vinculación con hoja de estilos externa -->
+</head>
+<body>
+  <!-- ======= HEADER MODERNO CON EFECTO GLASS ======= -->
+  <div class="header"> <!-- Contenedor principal del encabezado -->
+    <div class="header-glass"> <!-- Fondo tipo vidrio esmerilado -->
+      <img src="../img/logo.svg" alt="DASVP AIR Logo" class="header-logo"> <!-- Logo principal de DASVP AIR -->
+      <link rel="icon" href="../img/image.png" type="image/png"> <!-- Ícono del sitio (favicon) -->
+      <div class="header-title">✈️ DASVP AIR</div> <!-- Título principal con emoji de avión -->
+      <div class="header-slogan">Vuela a tus sueños ✨</div> <!-- Eslogan motivador con emoji -->
+    </div>
+    </svg> <!-- Etiqueta SVG cerrada incorrectamente, debería eliminarse o corregirse -->
+  </div>
+  <!-- ======= FIN HEADER ======= -->
+
+  <!-- ======= CONTENEDOR PRINCIPAL DEL FORMULARIO DE CHECK IN ======= -->
+  <div class="container checkin-box"> <!-- Contenedor específico para el check-in -->
+    <div class="section-title">Check In</div> <!-- Título visible de la sección -->
+    <hr class="divider"> <!-- Línea divisoria para separar visualmente -->
+
+    <!-- FORMULARIO PARA REALIZAR CHECK IN -->
+    <form action="../html/menu.html" method="get" autocomplete="off"> <!-- Enviar datos por método GET y deshabilitar autocompletado -->
+
+      <!-- Campo para ingresar el código de vuelo -->
+      <div class="input-group"> <!-- Agrupa etiqueta y campo de entrada -->
+        <input 
+          class="input-field" 
+          type="text" 
+          id="codigo" 
+          placeholder="Código de vuelo" required>
+        <label for="codigo" class="sr-only">Código de vuelo</label> <!-- Etiqueta accesible oculta visualmente -->
+      </div>
