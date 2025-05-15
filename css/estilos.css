@@ -625,3 +625,74 @@ textarea:focus {                                                                
     color: #f357a8;                 /* Cambia a rosa al pasar el cursor */
   }
   
+  /* --- REGISTRO --- */
+.registro-box {
+    margin-top: 32px;
+    padding-top: 48px;
+    background: var(--color-blanco);
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 4px 24px var(--color-shadow);
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.7s;
+    transition: box-shadow 0.3s, background 0.3s;
+  }
+  
+  .divider {
+    border: none;
+    border-top: 1.5px solid #ececec;
+    margin: 0 0 24px 0;
+    width: 100%;
+  }
+  
+  .registro-box .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #222;
+    text-align: center;
+  }
+  .registro-box .input-group {
+    width: 100%;
+    margin-bottom: 18px;
+  }
+  .registro-box .input-field {
+    width: 100%;
+    padding: 14px 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.08rem;
+    transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+    background: #fafbff;
+    outline: none;
+  }
+  .registro-box .input-field:focus {
+    border: 1.5px solid #7b2ff2;
+    box-shadow: 0 0 0 2px #e6e0fa;
+    background: #fff;
+  }
+  .registro-box select.input-field {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="gray" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 22px 22px;
+    padding-right: 38px;
+  }
+  .registro-box .btn-primary {
+    width: 100%;
+    background: #0e1316;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+  }
