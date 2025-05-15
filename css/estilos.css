@@ -945,3 +945,77 @@ textarea:focus {                                                                
     flex-shrink: 0;                                    /* Evita que el ícono se reduzca si el contenedor se estrecha */
   }
   
+  @media (min-width: 768px) {  /* Aplica estilos solo a pantallas con un ancho igual o mayor a 768px */
+    body {
+      background: linear-gradient(           /* Fondo con degradado vertical de blanco a gris claro */
+        to bottom,
+        #ffffff 0%,                          /* Desde blanco en la parte superior */
+        #f8f9fa 100%                         /* Hasta gris claro en la parte inferior */
+      );
+      display: flex;                         /* Utiliza flexbox para el contenido del body */
+      flex-direction: column;               /* Los elementos hijos se colocan en columna */
+      min-height: 100vh;                    /* Altura mínima igual al alto de la ventana */
+      margin: 0;                             /* Elimina márgenes por defecto */
+      font-family: 'Montserrat', sans-serif;/* Aplica fuente personalizada Montserrat */
+      position: relative;                   /* Establece posición relativa para posicionar elementos hijos absolutamente */
+    }
+    
+    /* Efecto visual decorativo en el fondo con ondas suaves y sutiles */
+    body::before {
+      content: "";                          /* Crea un pseudo-elemento vacío */
+      position: absolute;                   /* Posición absoluta dentro del body */
+      width: 100%;                          /* Ocupa todo el ancho del body */
+      height: 100%;                         /* Ocupa todo el alto del body */
+      background:                           /* Fondo compuesto por dos gradientes radiales */
+        radial-gradient(ellipse at 20% 20%, /* Primer gradiente radial en la esquina superior izquierda */
+          rgba(123, 47, 242, 0.02) 0%,      /* Color morado muy tenue */
+          transparent 40%),                /* Se desvanece a transparente */
+        radial-gradient(ellipse at 80% 80%, /* Segundo gradiente radial en la esquina inferior derecha */
+          rgba(67, 233, 254, 0.02) 0%,      /* Color azul muy tenue */
+          transparent 40%);                /* Se desvanece a transparente */
+      z-index: -1;                          /* Coloca el pseudo-elemento detrás del contenido */
+      opacity: 0.6;                         /* Aplica opacidad al efecto decorativo */
+    }
+    
+    .container {
+      display: none;                        /* Oculta completamente el contenedor principal en pantallas grandes */
+    }
+    
+    body::after {
+      content: "✨ Esta app solo funciona en móviles."; /* Muestra este mensaje como contenido del pseudo-elemento */
+      display: flex;                        /* Usa flexbox para alinear el mensaje */
+      flex-direction: column;              /* Alinea el contenido del mensaje en columna */
+      justify-content: center;             /* Centra verticalmente el contenido */
+      align-items: center;                 /* Centra horizontalmente el contenido */
+      text-align: center;                  /* Alinea el texto al centro */
+      padding: 40px;                       /* Espaciado interno generoso */
+      font-size: 24px;                     /* Tamaño de fuente grande para el mensaje */
+      color: #2d3748;                      /* Color de texto oscuro */
+      width: 80%;                          /* Ocupa el 80% del ancho disponible */
+      max-width: 600px;                    /* Máximo ancho de 600px */
+      margin: 30vh auto 0;                 /* Centrado vertical aproximado (30% del alto) y horizontal automático */
+      line-height: 1.6;                    /* Espaciado entre líneas para mejor lectura */
+      border: none;                        /* Sin borde visible */
+      border-radius: 16px;                 /* Bordes redondeados para el recuadro */
+      background: rgba(173, 120, 189, 0.96);/* Fondo violeta claro con transparencia */
+      box-shadow:                          /* Sombra suave para dar profundidad */
+        0 4px 24px rgba(0, 0, 0, 0.06),
+        0 1px 2px rgba(0, 0, 0, 0.04);
+      animation: fadeIn 0.6s ease-out;     /* Aplica animación de entrada suave */
+      position: relative;                  /* Posición relativa dentro del body */
+      backdrop-filter: blur(4px);          /* Difumina el fondo detrás del mensaje */
+      -webkit-backdrop-filter: blur(4px);  /* Compatibilidad para navegadores WebKit */
+    }
+  
+    @keyframes fadeIn {
+      from { 
+        opacity: 0;                         /* Comienza totalmente transparente */
+        transform: translateY(20px) scale(0.98); /* Ligeramente desplazado hacia abajo y reducido */
+      }
+      to { 
+        opacity: 1;                         /* Termina completamente visible */
+        transform: translateY(0) scale(1);  /* Posición normal y escala original */
+      }
+    }
+  }
+  
